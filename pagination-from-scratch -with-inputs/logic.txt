@@ -1,0 +1,72 @@
+- items to be displayed.
+- how many total items?
+- how many items to show on on page?
+- adding buttons of pages automatically depending on the total number of items
+- previous button 
+- next button
+- logic for disabling the previous and next button depending on the page
+- 
+
+
+
+
+
+
+
+Dynamically adding of lists with input html code 
+
+
+<!-- <label for="items">Enter the number of items: </label>
+    <input type="number" id="no-of-items" />
+    <br />
+    <br />
+    <label for="no_of_items"
+      >Enter the number of items displayed per page :
+    </label>
+    <input type="number" id="items-per-page"  aria-label="enter here"/>
+    <br />
+    <br />
+
+    <button type="submit" onclick="addElement()">Submit</button>
+
+    <div id="showitem">
+
+    </div>
+
+    <div class="button-container">
+
+     <button>pre</button>
+
+     <div id="button-space">
+   
+     </div>
+
+     <button>next</button> 
+    </div> -->
+
+
+
+
+JS code
+
+
+// const totalItems = document.getElementById("no-of-items");
+// const itemsPerPage = document.getElementById("items-per-page");
+// const noOfBtn = totalItems/itemsPerPage
+
+var ul = document.createElement("ul");
+
+function say() {
+  console.log("elooo");
+}
+
+function addElement() {
+  console.log("done");
+
+  for (let i = 0; i < totalItems.length; i++) {
+    console.log(i);
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(i));
+    ul.appendChild(li[i]);
+  }
+}
